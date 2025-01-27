@@ -1,0 +1,637 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffff;
+}
+
+.pg-1 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color:  #ffff;
+    background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif);
+    position: relative;
+}
+
+.pg-1 .nav {
+    height: 12vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+
+.pg-1 .nav .left {
+    width: 35%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2vw;
+    font-weight: 1200;
+}
+
+.pg-1 .nav .left i {
+    display: none;
+}
+
+.pg-1 .nav .left li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.pg-1 .nav img {
+    width: 8vw;
+}
+
+.pg-1 .nav .right {
+    width: 35%;
+    height: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    margin-right: 2vw;
+    font-weight: 1200;
+}
+
+.pg-1 .nav .right span {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 1200;
+    cursor: pointer;
+}
+
+.pg-1 .nav .right span:nth-child(2) {
+    padding: 2vh 1.5vw;
+    background-color: transparent;
+    border: 1.2px solid black;
+    color: #000;
+    border-radius: 50px;
+    text-shadow: 0px 0px 15px white;
+    position: relative;
+}
+
+.pg-1 .nav .right span:nth-child(2):hover {
+    transition: all ease .33s;
+    background-color: #000;
+    color: #fff;
+}
+
+.pg-1 .top {
+    height: 55vh;
+    width: 100%;
+    /* background: lightsalmon; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pg-1 .top span {
+    padding: 1vh 1vw ;
+    background-color: rgb(223, 223, 60);
+    border-radius: 50px;
+}
+
+.pg-1 .top h1 {
+    font-size: 4.5vw;
+    font-weight: 1200;
+    line-height: 1;
+    margin: 3.5vh 0;
+}
+
+.pg-1 .top p {
+    font-weight: 1200;
+    margin-bottom: 3.5vh;
+}
+
+.pg-1 .top button {
+    font-size: 1.5;
+    font-weight: 1200;
+    padding: 1.5vh 1.5vw;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-shadow: 0px 0px 15px white;
+}
+
+.pg-1 .top .order-form {
+    height: 70vh;
+    width: 60vw;
+    /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
+    background-color: #000;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
+    /* transform: scale(0); */
+}
+
+.pg-1 .top .order-form i {
+    position: absolute;
+    right: 2vw;
+    top: 4vh;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.pg-1 .top .order-form h1 {
+    margin-bottom: 10vh;
+}
+
+.pg-1 .top .order-form p {
+    cursor: pointer;
+    line-height: 6vh;
+}
+
+.pg-1 .top .order-form p:hover {
+    border: 1.2px solid blue;
+}
+
+.pg-1 .bottom {
+    height: calc(100vh - 55vh + 12vh);
+    width: 100%;
+    /* background: lightgreen; */
+    white-space: nowrap;
+   
+}
+
+.pg-1 .bottom::-webkit-scrollbar {
+    display: none;
+}
+
+.pg-1 .bottom .elems {
+    width: fit-content;
+    animation-name: scroller;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display: inline-block;
+    
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+}
+
+.pg-1 .bottom .elem {
+    height: 50vh;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.pg-1 .bottom .elem img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+@keyframes scroller {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(calc(-100% - 2vw));
+    }
+}
+
+.pg-2 {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #ffff;
+    padding: 10vh 5vw;
+    background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif);
+}
+
+.pg-2>h1 {
+    font-size: 3.5vw;
+    font-weight: 1200;
+    text-align: center;
+    margin-bottom: 8vh;
+    color: black;
+}
+
+.pg-2 .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.pg-2 .content .elem {
+    height: 35vh;
+    width: 21vw;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    flex-shrink: 0;
+    display: inline-block;
+    /* background-image: url(./IMG_7566.JPG);
+    background-size: cover;
+    background-position: top; */
+    overflow: hidden;
+    position: relative;
+    transition: all ease .33s; 
+    box-shadow: 0px 0px 1px black;
+    cursor: pointer;
+}
+
+.pg-2 .content .elem .bottom {
+    height: 35%;
+    width: 100%;
+    padding: 3.5vh 1.5vw;
+    background: linear-gradient(transparent, rgb(58, 56, 56));
+    position: absolute;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    bottom: -50%;
+    transition: all ease .33s;
+}
+
+.pg-2 .content .elem .bottom .left {
+    width: 60%;
+    height: fit-content;
+    overflow: hidden;
+    align-items: center;
+}
+
+.pg-2 .content .elem .bottom .left p {
+    font-size: 1.1vw;
+    font-weight: 1200;
+    color: white;
+}
+
+.pg-2 .content .elem .bottom .right {
+    width: 40%;
+    align-items: center;
+    color: white;
+}
+
+
+.pg-2 .content .elem .bottom .right i {
+    padding: 2vh;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.pg-2 .content .elem:hover .bottom {
+    bottom: 0;
+    left: 0; 
+    opacity: 1; 
+}
+
+.pg-2 .content .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease .33s;
+}
+
+.pg-2 .content .elem:hover img {
+    scale: 1.20;
+} 
+
+
+
+
+@media (max-width:600px) {
+
+
+    .pg-1 {
+        min-height: 100vh;
+        width: 100vw;
+        background-color:  #ffff;
+        background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif);
+        position: relative;
+    }
+    
+    .pg-1 .nav {
+        height: 12vh;
+        width: 100%;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 5vw;
+    }
+    
+    .pg-1 .nav .left {
+        width: 35%;
+        height: 100%;
+        /* background-color: lightcoral; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2vw;
+        font-weight: 1200;
+    }
+    
+    .pg-1 .nav .left i {
+        display: none;
+    }
+    
+    .pg-1 .nav .left li {
+        list-style: none;
+        cursor: pointer;
+    }
+    
+    .pg-1 .nav img {
+        width: 25vw;
+    }
+    
+    .pg-1 .nav .right {
+        width: 35%;
+        height: 100%;
+        /* background-color: lightblue; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5vw;
+        margin-right: 2vw;
+        font-weight: 1200;
+    }
+    
+    .pg-1 .nav .right span {
+        border: none;
+        background-color: transparent;
+        font-size: 3vw;
+        font-weight: 600;
+        cursor: pointer;
+        text-wrap: nowrap;
+    }
+    
+    .pg-1 .nav .right span:nth-child(2) {
+        padding: 1vh 2vw;
+        background-color: transparent;
+        border: 1.2px solid black;
+        color: #000;
+        border-radius: 50px;
+        text-shadow: 0px 0px 15px white;
+        position: relative;
+    }
+    
+    .pg-1 .nav .right span:nth-child(2):hover {
+        transition: all ease .33s;
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .pg-1 .top {
+        height: 55vh;
+        width: 100%;
+        /* background: lightsalmon; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pg-1 .top span {
+        padding: 1vh 5vw ;
+        background-color: rgb(223, 223, 60);
+        border-radius: 50px;
+    }
+    
+    .pg-1 .top h1 {
+        font-size: 5vw;
+        font-weight: 1200;
+        line-height: 1;
+        margin: 3.5vh 0;
+    }
+    
+    .pg-1 .top p {
+        font-weight: 1200;
+        margin-bottom: 4vh;
+    }
+    
+    .pg-1 .top button {
+        font-size: 2;
+        font-weight: 1200;
+        padding: 1.5vh 5vw;
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        text-shadow: 0px 0px 15px white;
+    }
+    
+    .pg-1 .top .order-form {
+        height: 70vh;
+        width: 60vw;
+        /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
+        background-color: #000;
+        position: absolute;
+        border-radius: 10px;
+        z-index: 9999;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        display: none;
+        /* transform: scale(0); */
+    }
+    
+    .pg-1 .top .order-form i {
+        position: absolute;
+        right: 4vw;
+        top: 2vh;
+        font-size: 4vw;
+        cursor: pointer;
+    }
+    
+    .pg-1 .top .order-form h1 {
+        margin-bottom: 10vh;
+    }
+    
+    .pg-1 .top .order-form p {
+        cursor: pointer;
+        line-height: 6vh;
+    }
+    
+    .pg-1 .top .order-form p:hover {
+        border: 1.2px solid blue;
+    }
+    
+    .pg-1 .bottom {
+        height: calc(100vh - 55vh + 12vh);
+        width: 100%;
+        /* background: lightgreen; */
+        white-space: nowrap;
+       
+    }
+    
+    .pg-1 .bottom::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .pg-1 .bottom .elems {
+        width: fit-content;
+        animation-name: scroller;
+        animation-timing-function: linear;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        display: inline-block;
+        
+        /* overflow-x: auto;
+        overflow-y: hidden; */
+    }
+    
+    .pg-1 .bottom .elem {
+        height: 25vh;
+        width: 50vw;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .pg-1 .bottom .elem img {
+        height: 100%;
+        width: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+    
+    @keyframes scroller {
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(calc(-100% - 2vw));
+        }
+    }
+    
+    .pg-2 {
+        margin-top: -40vh;
+        min-height: 100vh;
+        width: 100vw;
+        background-color: #ffff;
+        padding: 10vh 5vw;
+        background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif);
+    }
+    
+    .pg-2>h1 {
+        font-size: 3.5vw;
+        font-weight: 1200;
+        text-align: center;
+        margin-bottom: 8vh;
+        color: black;
+    }
+    
+    .pg-2 .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    
+    .pg-2 .content .elem {
+        height: 25vh;
+        width: 40vw;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+        flex-shrink: 0;
+        display: inline-block;
+        /* background-image: url(./IMG_7566.JPG);
+        background-size: cover;
+        background-position: top; */
+        overflow: hidden;
+        position: relative;
+        transition: all ease .33s; 
+        box-shadow: 0px 0px 1px black;
+        cursor: pointer;
+    }
+    
+    .pg-2 .content .elem .bottom {
+        height: 35%;
+        width: 100%;
+        padding: 3.5vh 1.5vw;
+        background: linear-gradient(transparent, rgb(58, 56, 56));
+        position: absolute;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        position: absolute;
+        bottom: -50%;
+        transition: all ease .33s;
+    }
+    
+    .pg-2 .content .elem .bottom .left {
+        width: 60%;
+        height: fit-content;
+        overflow: hidden;
+        align-items: center;
+    }
+    
+    .pg-2 .content .elem .bottom .left p {
+        font-size: 1.1vw;
+        font-weight: 1200;
+        color: white;
+    }
+    
+    .pg-2 .content .elem .bottom .right {
+        width: 40%;
+        align-items: center;
+        color: white;
+    }
+    
+    
+    .pg-2 .content .elem .bottom .right i {
+        padding: 2vh;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    
+    
+    .pg-2 .content .elem:hover .bottom {
+        bottom: 0;
+        left: 0; 
+        opacity: 1; 
+    }
+    
+    .pg-2 .content .elem img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all ease .33s;
+    }
+    
+    .pg-2 .content .elem:hover img {
+        scale: 1.20;
+    }     
+
+}
