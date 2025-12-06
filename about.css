@@ -1,0 +1,28 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html,body {
+   height: 100%;
+   width: 100%;
+   background-color: #00000007;
+   padding: 10vh 10vw;
+   background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif);
+}
+
+p {
+   font-size: 2vw;
+   font-weight: 500;
+   color: #333;
+   line-height: 1.6;
+}
+
+@media (max-width:600px) {
+   p {
+       font-size: 4vw;
+   }
+}   
+
+
