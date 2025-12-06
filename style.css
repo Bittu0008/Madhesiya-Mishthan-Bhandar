@@ -73,6 +73,7 @@ html,body {
 .pg-1 .nav .right a {
     text-decoration: none;
     color: black;
+     text-wrap: nowrap;
 }
 
 .pg-1 .nav .right a:hover {
@@ -644,4 +645,5 @@ html,body {
     }     
 
 }
+
 
