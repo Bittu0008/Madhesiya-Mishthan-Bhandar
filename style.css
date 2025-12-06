@@ -70,6 +70,15 @@ html,body {
     font-weight: 1200;
 }
 
+.pg-1 .nav .right a {
+    text-decoration: none;
+    color: black;
+}
+
+.pg-1 .nav .right a:hover {
+    text-decoration: underline;
+}
+
 .pg-1 .nav .right span {
     border: none;
     background-color: transparent;
@@ -635,3 +644,4 @@ html,body {
     }     
 
 }
+
