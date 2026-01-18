@@ -92,7 +92,7 @@ html,body {
     cursor: pointer;
 }
 
-.pg-1 .nav .right span:nth-child(2) {
+.pg-1 .nav .right span:nth-child(3) {
     padding: 2vh 1.5vw;
     background-color: transparent;
     border: 1.2px solid black;
@@ -102,7 +102,7 @@ html,body {
     position: relative;
 }
 
-.pg-1 .nav .right span:nth-child(2):hover {
+.pg-1 .nav .right span:nth-child(3):hover {
     transition: all ease .33s;
     background-color: #000;
     color: #fff;
@@ -154,16 +154,18 @@ html,body {
     height: 70vh;
     width: 60vw;
     /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
-    background-color: #000;
+    /* background-color: #00000000; */
     position: absolute;
     border-radius: 10px;
     z-index: 9999;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
+    color: #000;
     display: none;
+    backdrop-filter: blur(25px);
     /* transform: scale(0); */
+    border: 2px solid #00000033;
 }
 
 .pg-1 .top .order-form i {
@@ -184,7 +186,9 @@ html,body {
 }
 
 .pg-1 .top .order-form p:hover {
-    border: 1.2px solid blue;
+    border: 1.2px solid #000;
+    font-size: 1.4vw;
+    transition: all ease .33s;
 }
 
 .pg-1 .bottom {
