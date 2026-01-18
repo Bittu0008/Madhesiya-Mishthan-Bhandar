@@ -8,18 +8,116 @@ html,body {
    height: 100%;
    width: 100%;
    background-color: #00000007;
-   padding: 10vh 10vw;
    background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif);
+   
 }
 
-p {
+.main {
+   height: 100%;
+   width: 100%;
+   /* background-color: lightgreen; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 25vh 19vw;
+   gap: 5vh;
+}
+
+.nav {
+    height: 12vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+    backdrop-filter: blur(12px);
+    position: fixed;
+    z-index: 999;
+    border-bottom: 1px solid #00000033;
+}
+
+.nav .left {
+    width: 35%;
+    height: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2vw;
+    font-weight: 1200;
+}
+
+.nav .left i {
+    display: none;
+}
+
+.nav .left li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav img {
+    width: 5vw;
+}
+
+.nav .right {
+   top: 0;
+   left: 0;
+    width: 35%;
+    height: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    margin-right: 2vw;
+    font-weight: 1200;
+    z-index: 999;
+}
+
+.nav .right a {
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+}
+
+.nav .right a:hover {
+    text-decoration: underline;
+}
+
+.nav .right span {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2vw;
+    font-weight: 1200;
+    cursor: pointer;
+}
+
+.nav .right span:nth-child(3) {
+    padding: 2vh 1.5vw;
+    background-color: transparent;
+    border: 1.2px solid black;
+    color: #000;
+    border-radius: 50px;
+    text-shadow: 0px 0px 15px white;
+    position: relative;
+}
+
+.nav .right span:nth-child(3):hover {
+    transition: all ease .33s;
+    background-color: #000;
+    color: #fff;
+}
+
+.main p {
    font-size: 2vw;
    font-weight: 500;
    color: #000;
    line-height: 1.6;
 }
 
-a {
+.main a {
    text-decoration: none;
    color: #000;
    font-weight: 900;
@@ -30,7 +128,7 @@ a {
    transition: all 0.3s ease;
 }
 
-a:hover {
+.main a:hover {
    background-color: #000;
    color: #fff;
    text-shadow: 0px 0px 15px white;
@@ -39,16 +137,67 @@ a:hover {
 }
 
 .visit-us {
-   display: inline-block;
-   margin-top: 2vh;
+   position: fixed;
+   left: 19vw;
+   top: 62vh;
+   
 }
+
+
+
+
+.order-form {
+    height: 70vh;
+    width: 60vw;
+    /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
+    /* background-color: #00000000; */
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    display: none;
+    backdrop-filter: blur(25px);
+    /* transform: scale(0); */
+    border: 2px solid #00000033;
+    text-align: center;
+}
+
+.order-form i {
+    position: absolute;
+    right: 2vw;
+    top: 4vh;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.order-form h1 {
+    margin-bottom: 10vh;
+    font-size: 4.5vw;
+    font-weight: 1200;
+    line-height: 1;
+}
+
+.order-form p {
+    cursor: pointer;
+    line-height: 6vh;
+    font-weight: 1200;
+    margin-bottom: 3.5vh;
+}
+
+.order-form p:hover {
+    border: 1.2px solid #000;
+    font-size: 1.4vw;
+    transition: all ease .33s;
+}
+
 
 @media (max-width:600px) {
    p {
        font-size: 4vw;
    }
 }   
-
-
 
 
