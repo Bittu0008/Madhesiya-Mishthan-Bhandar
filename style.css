@@ -155,10 +155,10 @@ html,body {
     width: 60vw;
     /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
     /* background-color: #00000000; */
-    position: absolute;
+    /* position: absolute; */
     border-radius: 10px;
     z-index: 9999;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #000;
@@ -166,6 +166,7 @@ html,body {
     backdrop-filter: blur(25px);
     /* transform: scale(0); */
     border: 2px solid #00000033;
+    position: fixed;
 }
 
 .pg-1 .top .order-form i {
@@ -207,7 +208,7 @@ html,body {
     width: fit-content;
     animation-name: scroller;
     animation-timing-function: linear;
-    animation-duration: 5s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     display: inline-block;
     
@@ -409,7 +410,7 @@ html,body {
         text-wrap: nowrap;
     }
     
-    .pg-1 .nav .right span:nth-child(2) {
+    .pg-1 .nav .right span:nth-child(3) {
         padding: 1vh 2vw;
         background-color: transparent;
         border: 1.2px solid black;
@@ -419,7 +420,7 @@ html,body {
         position: relative;
     }
     
-    .pg-1 .nav .right span:nth-child(2):hover {
+    .pg-1 .nav .right span:nth-child(3):hover {
         transition: all ease .33s;
         background-color: #000;
         color: #fff;
@@ -466,21 +467,23 @@ html,body {
         text-shadow: 0px 0px 15px white;
     }
     
-    .pg-1 .top .order-form {
-        height: 70vh;
-        width: 60vw;
-        /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
-        background-color: #000;
-        position: absolute;
-        border-radius: 10px;
-        z-index: 9999;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        color: white;
-        display: none;
-        /* transform: scale(0); */
-    }
+   .pg-1 .top .order-form {
+    height: 70vh;
+    width: 60vw;
+    /* background-image: url(./social-media-icon-seamless-pattern-vector-background_153454-4600.avif); */
+    /* background-color: #00000000; */
+    position: absolute;
+    border-radius: 10px;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000;
+    display: none;
+    backdrop-filter: blur(25px);
+    /* transform: scale(0); */
+    border: 2px solid #00000033;
+}
     
     .pg-1 .top .order-form i {
         position: absolute;
